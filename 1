@@ -1,0 +1,13 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "ru");
+	int x;
+	cout << "Введите кол-во секунд: ";
+	cin >> x;
+	x %= 60;
+	cout << x << endl;
+}
