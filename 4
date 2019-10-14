@@ -1,0 +1,23 @@
+
+#include "pch.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "ru");
+	int a, b, c,x,a_,b_,v;
+	cout << "Введите A: ";
+	cin >> a;
+	cout << "Введите B: ";
+	cin >> b;
+	cout << "Введите C: ";
+	cin >> c;
+	if (a > c || b > c) {
+		a_ =a/ c;
+		b_ = b/c;
+		x = a_ * b_;
+		cout << "В прямоуголькик со сторонами А и В вмещается " << x << " крадратов со сторонами С" << endl;
+		v = (a*b) - (x*c*c);
+		cout << "Площадь незанятой части прямоугольника " << v << endl;
+	}
+}
