@@ -5,8 +5,12 @@ using namespace std;
 int main()
 {
 	setlocale(LC_ALL, "ru");
-	int x,a;
+	int x, a, b;
+	cout << "Введите день (1-365): ";
 	cin >> x;
+	b = (x / 7) + 1;
 	a = x % 7;
-    cout << a;
+	cout << "Номер для недели: "<<a << endl;
+	cout << "Неделя: "<<b;
 }
+
