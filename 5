@@ -1,0 +1,22 @@
+
+#include "pch.h"
+#include <iostream>
+using namespace std;
+int main()
+{
+	setlocale(LC_ALL, "ru");
+	int x,c=0;
+	cout << "Введите год: ";
+	cin >> x;
+	if (x % 100 != 0) {
+		c++;
+		x /= 100;
+		x += c;
+		cout << "Начало "<<x<<" века";
+	}
+	else
+	{
+		x /= 100;
+		cout << x << " век"<< endl;
+	}
+}
